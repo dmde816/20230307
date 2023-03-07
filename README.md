@@ -33,6 +33,7 @@
 
 - git 사용자 설정
 - git bash 검색
+- 컨트롤 물결하면 터미널 열림
 
 - git config --global user.name""
 - git config --gloval user.email""
@@ -56,3 +57,61 @@
 - 저장소와 파일의 내용이 다를 때 컬러로 표현해 준다.
 - 초록색: 추가 U
 - 빨간색: 삭제 D
+
+- git 저장소 파일 스테이징
+- 업로드 전 준비하는 것 업로드할 파일들
+
+
+- git add 해당 파일 이름
+- git add . 모든 파일이 스테이징
+
+- 커밋 메시지 작성
+- git commit -m "메시지 내용"
+
+- 파일들을 업로드할 준비가 끝났다.
+- git remote add origin "연결할 원격 저장소 주소"
+
+- 원격 저장소에 업로드
+- git push
+
+- 작업을 했으면 commit에 간단하게 기록해놔야 동료들이 볼 수 있다.
+
+- git을 관리하면서 자리 이동 했을 떄 commit을 올렸는데 사용자 명이 다를 겨우 
+제어판에 가서 -> 사용자 계정 -> 자격증명관리자 -> windows 자격증명관리자 -> github.com - > 탭을 열어서(아코디언박스) 제거 버튼 누르고 삭제한 후 -> 사용자 등록 진행하면 된다. 
+
+- 협업을 할 때는 git push부터 날리면 안 되고 pull, push
+- pull push 먼저 작업물을 병합하고 작업물을 올리자!
+- 무조건 남의 작업물을 먼저 받고 병합한 다음에 push 해야한다.
+- A와 B가 있으면 A가 먼저 push 하고, B가 계속 작업을 하다가
+- A의 작업물을 병합하지 않고 push를 하게 되면 A의 작업물이 다 날아간다.
+
+- git 파일을 잘못 만들었을 때 rm -rf .폴더명 : 폴더 삭제 (ex) rm -rf .git
+- 잘못 만든 파일이 있으면 바로바로 지워야함
+
+
+- 새로운 환경에서 git 저장소 연결을 할 때 따라하세요
+- git init
+- git remote add origin 저장소의 주소
+- 저장소의 주소는 해당 깃허브의 저장소에 접속해서  code(초록버튼)을 누르면 볼 수 있다.
+- 
+
+- git push origin master 는 올리는 것
+- git pull origin master : 원격 저장소에서 파일을 받아오는 것 이어서 작업하기 위해
+
+- 오늘의 과제는
+- 지금까지 한 과제들이랑 수업자료들을 저장소 만들어서 업로드하기
+
+
+- git 허브 올리는 순서!
+- 내 github에 올릴 폴더를 만든다. 
+- git init
+- git add . (모든 파일, 따로 올리려면 파일명 하나하나 지정)
+- git commit -m"" (파일 옆에 뜰 컴잇 글)
+- git remote add origin 올릴 깃허브 폴더 주소
+- git push origin master (master인 이유는 브런치를 구분하기 위해서임 이게 최종본이기 때문에 master인 것. 만약 다른 사람들이랑 같이 만드는 거면 다 같이 합쳐서 완성본이 master여야하고 내가 혼자 만드는 건 main으로 )
+
+
+- git 허브 당기는 순서
+- git init을 한 후
+- 지정소를 연결하고
+- pull을 한다.
